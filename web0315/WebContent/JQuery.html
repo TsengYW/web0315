@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Menu</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#workMenu").click(function(){
+			$("#sub1").slideToggle();
+			});
+		});
+</script>
+<ul>
+	<li>
+		<span id="workMenu" Style="cursor: pointer">Main1</span>
+		<ul>
+			<div id="sub1">Sub Menu
+				<li><a href="#">sub1</a></li>
+				<li><a href="#">sub2</a></li>
+			</div>
+		</ul>
+	</li>
+	<li><a href="#">Main Menu2</a></li>
+	<li><a href="#">Main Menu3</a></li>
+</ul>
+
+</body>
+</html>
